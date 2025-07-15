@@ -193,7 +193,7 @@ impl BiliBili {
             .timeout(Duration::new(60, 0))
             .build()?
             .post(format!(
-                "http://member.bilibili.com/x/vu/client/add?access_key={}",
+                "https://member.bilibili.com/x/vu/web/add/v3?access_key={}",
                 self.login_info.token_info.access_token
             ))
             .json(studio)
